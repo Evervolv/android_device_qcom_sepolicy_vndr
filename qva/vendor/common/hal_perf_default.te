@@ -143,3 +143,4 @@ hal_client_domain(vendor_hal_perf_default, hal_thermal);
 
 dontaudit vendor_hal_perf_default self:capability dac_override;
 dontaudit vendor_hal_perf_default system_server:dir search;
+dontaudit vendor_hal_perf_default { domain - appdomain }:process { getsched setsched };
