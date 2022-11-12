@@ -247,6 +247,10 @@
 /vendor/lib(64)?/vendor\.qti\.hardware\.perf@2\.3\.so    u:object_r:same_process_hal_file:s0
 /vendor/lib(64)?/vendor\.qti\.hardware\.perf2-V1-ndk\.so    u:object_r:same_process_hal_file:s0
 
+#poweropt-service
+/(vendor|system/vendor)/bin/poweropt-service u:object_r:vendor_hal_poweroptservice_qti_exec:s0
+/data/vendor/pwr(/.*)? u:object_r:vendor_pm_data_file:s0
+
 #wifilearner daemon
 /(vendor|system/vendor)/bin/wifilearner    u:object_r:vendor_wifilearnersvc_exec:s0
 
