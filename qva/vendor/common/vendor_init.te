@@ -55,6 +55,7 @@ allow vendor_init kernel:file { open write };
 
 userdebug_or_eng(`
   set_prop(vendor_init, vendor_audio_debug_prop)
+  get_prop(vendor_init, persist_debug_prop)
 ')
 
 set_prop(vendor_init, vendor_disable_spu_prop)
