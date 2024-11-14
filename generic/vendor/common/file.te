@@ -101,6 +101,7 @@ type vendor_sysfs_touch, sysfs_type, fs_type;
 type vendor_sysfs_uio_file, sysfs_type, fs_type;
 type vendor_sysfs_wdog_device, sysfs_type, fs_type;
 type vendor_sysfs_usb_c, sysfs_type, fs_type;
+type vendor_sysfs_usb_data_enabled, sysfs_type, fs_type;
 type vendor_sysfs_usb_device, sysfs_type, fs_type;
 type vendor_sysfs_usb_supply, sysfs_type, fs_type;
 type vendor_sysfs_usbpd_device, sysfs_type, fs_type;
@@ -281,3 +282,8 @@ type vendor_tlpd_socket, file_type;
 type vendor_tlpd_data_file, file_type, data_file_type;
 
 type vendor_dlsc_data_file, file_type, data_file_type;
+
+# ddi image
+userdebug_or_eng(`
+type vendor_ddi_file, file_type, data_file_type;
+')
